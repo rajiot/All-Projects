@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .project {
+            margin-bottom: 2em;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .project:hover .project-content {
+            opacity: 1;
+        }
+
+        #profile-img {
+            max-width: 100%;
+            border-radius: 50%;
+            border: 5px solid #333;
+            margin: 20px 0;
+            animation: rotate 4s linear infinite;
+        }
+
+        #profile-img:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Raj Portfolio</h1>
+        <p>Welcome to my portfolio website</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img id="profile-img" src="https://rajpingale0522-tf-bucket.s3.ap-south-1.amazonaws.com/profile.png" alt="Profile Image">
+        <p>Hi, I'm Raj. I am a passionate web developer with a strong foundation in front-end and back-end technologies.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="project-content">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+                <p>Client: ABC Company</p>
+                <p>Technologies used: HTML, CSS, JavaScript</p>
+                <p>Rating: ⭐⭐⭐⭐</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="project-content">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+                <p>Client: XYZ Corporation</p>
+                <p>Technologies used: React, Node.js, MongoDB</p>
+                <p>Rating: ⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
+
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="reviews">
+        <h2>Client Reviews</h2>
+        <div class="review">
+            <p>"Raj did an amazing job on our project. The website exceeded our expectations!" - ABC Company</p>
+        </div>
+        <div class="review">
+            <p>"Extremely professional and skilled developer. Would highly recommend!" - XYZ Corporation</p>
+        </div>
+        <!-- Add more reviews as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via email at <a href="mailto:raj@example.com">raj@example.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Raj Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
